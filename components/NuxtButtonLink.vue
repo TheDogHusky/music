@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type {NuxtButtonLinkProps} from "~/components/button.types";
+import type {NuxtButtonLinkProps} from "./button.types";
 import {twMerge} from "tailwind-merge";
 
 const props = defineProps<NuxtButtonLinkProps>();

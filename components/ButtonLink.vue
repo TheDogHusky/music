@@ -1,6 +1,6 @@
 <script setup lang="ts">
+import type {ButtonLinkProps} from "./button.types";
 import {twMerge} from "tailwind-merge";
-import {ButtonLinkProps} from "~/components/button.types";
 
 const props = defineProps<ButtonLinkProps>();
 
@@ -10,7 +10,7 @@ const buttonClasses = computed(() => {
     secondary: "bg-gray-600 hover:bg-gray-700 focus:ring-gray-600 text-white",
     warning: "bg-amber-600 hover:bg-amber-700 focus:ring-amber-600 text-white",
     danger: "bg-red-700 hover:bg-red-800 focus:ring-red-700 text-white",
-    icon: "text-gray-300 h-10 w-10 text-xl p-2 flex flex-row items-center justify-center",
+    icon: "text-gray-300 h-10 w-10 text-2xl p-2 flex flex-row items-center justify-center",
   };
 
   const sizeVariants: {[key: string]: string} = {
