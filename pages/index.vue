@@ -12,5 +12,6 @@ import Socials from "~/components/Socials.vue";
   <section id="content" class="flex flex-col items-center justify-center w-full text-white h-screen bg-neutral-900 gap-2">
     <h2 class="text-2xl font-bold">My New Song</h2>
     <p class="text-xl font-semibold">"Destroying Me Quit" is available on <NuxtStyledLink href="https://uwu.com">major streaming platforms</NuxtStyledLink>!</p>
+    <NuxtImg src="public/songs/dmq.webp" format="webp" alt="Destroying Me Quit image" class="h-75 w-75" />
   </section>
 </template>
