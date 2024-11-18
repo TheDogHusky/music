@@ -5,5 +5,10 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
   typescript: {
     strict: true
-  }
+  },
+  router: {
+    linkActiveClass: 'text-secondary',
+    linkExactActiveClass: 'text-red'
+  },
+  plugins: [{ src: '~/plugins/aos.client', mode: 'client' }]
 });

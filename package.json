@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxt/image": "^1.8.0",
     "@nuxtjs/tailwindcss": "^6.12.1",
+    "aos": "^2.3.4",
     "nuxt": "^3.13.0",
     "tailwind-merge": "^2.5.2",
     "vue": "latest",
