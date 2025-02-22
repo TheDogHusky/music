@@ -1,0 +1,11 @@
+services:
+  music:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    networks:
+      - mynetwork
+networks:
+  mynetwork:
+    name: mynetwork
+    external: true
