@@ -5,6 +5,8 @@ services:
       dockerfile: docker/Dockerfile
     networks:
       - mynetwork
+    environment:
+      - NGINX_RELOAD_ENABLED=true
 networks:
   mynetwork:
     name: mynetwork
