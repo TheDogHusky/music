@@ -11,6 +11,8 @@ const classes = computed(() => {
       isActive.value ? "show !visible" : ""
   );
 });
+
+// TODO close navbar if clicked
 </script>
 
 <template>
