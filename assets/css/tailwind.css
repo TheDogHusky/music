@@ -1,6 +1,82 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #22d5d2;
+    --color-primary-50: #effefc;
+    --color-primary-100: #cafdf8;
+    --color-primary-200: #94fbf2;
+    --color-primary-300: #57f1ea;
+    --color-primary-400: #22d5d2;
+    --color-primary-500: #0cc0c0;
+    --color-primary-600: #06999b;
+    --color-primary-700: #0a787b;
+    --color-primary-800: #0d5f62;
+    --color-primary-900: #104f51;
+    --color-primary-950: #022d31;
+    
+    --color-secondary: #3777ff;
+    --color-secondary-50: #eef5ff;
+    --color-secondary-100: #d9e8ff;
+    --color-secondary-200: #bcd7ff;
+    --color-secondary-300: #8ebeff;
+    --color-secondary-400: #599aff;
+    --color-secondary-500: #3777ff;
+    --color-secondary-600: #1b52f5;
+    --color-secondary-700: #143ee1;
+    --color-secondary-800: #1733b6;
+    --color-secondary-900: #19308f;
+    --color-secondary-950: #141f57;
+
+    --color-gray: #bbbbbb;
+    --color-gray-50: #f7f7f7;
+    --color-gray-100: #ededed;
+    --color-gray-200: #dfdfdf;
+    --color-gray-300: #bbbbbb;
+    --color-gray-400: #adadad;
+    --color-gray-500: #999999;
+    --color-gray-600: #888888;
+    --color-gray-700: #7b7b7b;
+    --color-gray-800: #676767;
+    --color-gray-900: #545454;
+    --color-gray-950: #363636;
+
+    --color-slate: #282c34;
+    --color-slate-50: #f6f7f9;
+    --color-slate-100: #edeef1;
+    --color-slate-200: #d6dae1;
+    --color-slate-300: #b2bac7;
+    --color-slate-400: #8895a8;
+    --color-slate-500: #6a798d;
+    --color-slate-600: #546175;
+    --color-slate-700: #454f5f;
+    --color-slate-800: #3c4450;
+    --color-slate-900: #353b45;
+    --color-slate-950: #282c34;
+
+    --color-bunker-50: #f6f7f9;
+    --color-bunker-100: #edeef1;
+    --color-bunker-200: #d6dae1;
+    --color-bunker-300: #b2b9c7;
+    --color-bunker-400: #8995a7;
+    --color-bunker-500: #6a778d;
+    --color-bunker-600: #555f74;
+    --color-bunker-700: #454e5f;
+    --color-bunker-800: #3c4350;
+    --color-bunker-900: #353a45;
+    --color-bunker-950: #181a1f;
+
+    --color-woodsmoke-50: #f6f6f6;
+    --color-woodsmoke-100: #e7e7e7;
+    --color-woodsmoke-200: #d1d1d1;
+    --color-woodsmoke-300: #b0b0b0;
+    --color-woodsmoke-400: #888888;
+    --color-woodsmoke-500: #6d6d6d;
+    --color-woodsmoke-600: #5d5d5d;
+    --color-woodsmoke-700: #4f4f4f;
+    --color-woodsmoke-800: #454545;
+    --color-woodsmoke-900: #282828;
+    --color-woodsmoke-950: #141414;
+}
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -22,4 +98,12 @@ body {
 
 h1 {
     @apply cursor-default border-b-4 max-sm:text-3xl text-center border-transparent hover:border-secondary border-dashed pb-1 md:pb-2 text-5xl font-normal text-white hover:text-primary duration-200
+}
+
+h1.group > span.special {
+    @apply duration-200 group-hover:text-secondary text-primary;
+}
+
+.h-main {
+    height: calc(100dvh - 80px);
 }
