@@ -3,9 +3,9 @@
 </script>
 
 <template>
-    <main class="flex flex-col items-center justify-center w-full text-white h-[calc(100vh-80px)] bg-slate-950 gap-2 app-header">
+    <main class="flex flex-col items-center justify-center w-full text-white h-main bg-slate-950 gap-2 app-header">
         <NuxtImg src="/logo.webp" alt="logo" class="w-40 h-40" />
-        <h1 class="cursor-default border-b-4 max-sm:text-3xl text-center border-transparent hover:border-secondary border-dashed pb-2 text-5xl font-normal text-white hover:text-primary duration-200 group"><span class="duration-200 group-hover:text-secondary font-semibold text-primary">Adam Billard</span>, young musician.</h1>
+        <h1 class="group"><span class="special">Adam Billard</span>, young musician.</h1>
         <Socials type="header" />
         <ScrollButton href="#content" />
     </main>

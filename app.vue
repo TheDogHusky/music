@@ -40,7 +40,7 @@ useSeoMeta({
 
 <template>
     <div class="flex flex-col text-white">
-        <NuxtLoadingIndicator />
+        <NuxtLoadingIndicator :throttle="0" color="#22d5d2" />
         <NuxtLayout>
             <NuxtPage />
         </NuxtLayout>
