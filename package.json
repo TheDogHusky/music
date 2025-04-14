@@ -13,6 +13,7 @@
         "@nuxt/image": "^1.8.0",
         "aos": "^2.3.4",
         "nuxt": "^3.13.0",
+        "nuxt-svgo": "4.0.17",
         "tailwind-merge": "^2.5.2",
         "vue": "latest",
         "vue-router": "latest"
