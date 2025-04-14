@@ -27,7 +27,7 @@ const songs = [
     <main class="flex flex-col items-center justify-center w-full text-white h-main bg-slate-950 gap-2 app-header">
         <h1 data-aos-easing="ease-in-out" data-aos="fade-down" data-aos-duration="500" class="group">My <span class="special">Songs</span></h1>
         <p data-aos-easing="ease-in-out" data-aos-delay="100" data-aos="fade-down" data-aos-duration="500" class="text-xl font-semibold text-center">All my songs are available on <NuxtStyledLink href="https://distrokid.com/hyperfollow/adambillard" target="_blank">major streaming platforms</NuxtStyledLink>!</p>
-        <Socials data-aos-easing="ease-in-out" data-aos="fade-down" data-aos-duration="500" data-aos-delay="100" type="music" />
+        <Socials data-aos-easing="ease-in-out" data-aos="fade-down" data-aos-duration="500" data-aos-delay="200" type="music" />
     </main>
     <section class="flex flex-col items-center p-4 md:py-4 justify-center w-full text-white min-h-screen bg-bunker-950 gap-5">
         <div class="flex flex-row flex-wrap items-center justify-center w-full gap-4">

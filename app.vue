@@ -34,7 +34,7 @@ useSeoMeta({
     ogLocale: "en_US",
     ogSiteName: "Adam Billard, young musician",
     ogTitle: "Adam Billard, young musician",
-    ogDescription: " Adam Billard's Music Portfolio. Adam Billard is a young French musician that started making music at 13 years old.",
+    ogDescription: "Adam Billard's Music Portfolio. Adam Billard is a young French musician that started making music at 13 years old.",
 });
 </script>
 
