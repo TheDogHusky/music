@@ -4,7 +4,7 @@
 
 <template>
     <main class="flex flex-col items-center justify-center w-full text-white h-main bg-slate-950 gap-2 app-header">
-        <NuxtImg src="/logo.webp" alt="logo" class="w-40 h-40" />
+        <NuxtImg src="/logo.webp" alt="logo" class="h-30 w-30 md:w-40 md:h-40" />
         <h1 class="group"><span class="special">Adam Billard</span>, young musician.</h1>
         <Socials type="header" />
         <ScrollButton href="#content" />

@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 import NavCollapseButton from "~/components/NavCollapseButton.vue";
 
 const { isActive, toggleActive, setActive } = useNavStates();
-const itemsClass = twMerge("flex h-12 max-md:w-full overflow-hidden flex-row items-center gap-6 px-2 navitems max-md:h-auto max-md:invisible max-md:flex-col max-md:justify-center max-md:gap-4");
+const itemsClass = twMerge("flex md:border-0 h-12 max-md:w-full overflow-hidden flex-row items-center gap-6 px-2 navitems max-md:h-auto max-md:invisible max-md:flex-col max-md:justify-center max-md:gap-4");
 
 const classes = computed(() => {
     return twMerge(

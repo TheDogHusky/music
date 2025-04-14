@@ -10,20 +10,20 @@ const types = ["footer", "header", "contact"];
 const type = (types.includes(props.type as string) ? props.type : "header") as string;
 
 const socialsSizes: { [key: string]: string } = {
-    footer: "!text-2xl max-sm:!text-2xl",
-    header: "!text-6xl gap-4 max-sm:!text-3xl max-sm:gap-2",
-    contact: "!text-6xl max-sm:!text-3xl"
+    footer: "lg:text-2xl text-2xl",
+    header: "lg:text-6xl gap-4 text-3xl gap-2",
+    contact: "lg:text-6xl md:text-3xl text-xl"
 };
 
 const buttonSocialsSizes: {[key: string]: string} = {
-    footer: "!text-2xl max-sm:!text-2xl",
-    header: "!text-5xl max-sm:!text-3xl",
-    contact: "!text-5xl max-sm:!text-3xl"
+    footer: "lg:text-2xl text-2xl",
+    header: "lg:text-5xl text-3xl",
+    contact: "lg:text-5xl sm:text-2x md:text-3xl text-xl"
 };
 
 const socialsClass = computed(() => {
     return twMerge(
-        "flex flex-row gap-2 justify-center items-center text-gray-300 !text-4xl max-sm:!text-2xl",
+        "flex flex-row gap-4 sm:gap-2 justify-center flex-wrap sm:flex-nowrap items-center text-gray-300 md:text-2xl lg:text-4xl text-2xl",
         socialsSizes[type]
     );
 });
