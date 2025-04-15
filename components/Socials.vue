@@ -117,7 +117,7 @@ const socialsClass = computed(() => {
         <template v-for="link of links">
             <ButtonLink :key="link.name" special="socials" :class="buttonSocialsSizes[type]" :href="link.href" target="_blank" variant="icon" v-if="link.showSelf">
                 <Icon :name="link.icon" v-if="link.name !== 'Deezer'" />
-                <DeezerSVG class="h-6 w-6 deezer-icon" v-else />
+                <DeezerSVG class="h-[48px] w-[48px] mb-0!" v-else />
                 <span v-if="link.showName">{{ link.name }}</span>
             </ButtonLink>
         </template>

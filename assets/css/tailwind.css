@@ -110,9 +110,3 @@ h1:not(.basic).group > span.special {
 .h-main {
     min-height: calc(100dvh - 80px);
 }
-
-.deezer-icon {
-    height: 48px !important;
-    margin: 0 !important;
-    width: 48px !important;
-}
