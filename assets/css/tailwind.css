@@ -90,17 +90,18 @@ body {
 
 .app-header {
     background-image: url(/main-bg.svg);
-    background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    @apply bg-[75%] md:bg-[50%]
 }
 
 h1:not(.basic) {
     @apply cursor-default border-b-4 max-sm:text-3xl text-center border-transparent hover:border-secondary border-dashed pb-1 md:pb-2 text-5xl font-normal text-white hover:text-primary duration-200;
     transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.5s ease-in-out !important;
+    transition-delay: 0s, 0s, 0.1s !important;
 }
 
 h1:not(.basic).group > span.special {
