@@ -22,6 +22,6 @@ const handleError = () => clearError({ redirect: '/' });
                 If the issue persists, please contact me via the <NuxtStyledLink to="/contact">contact page</NuxtStyledLink>.
             </p>
         </div>
-        <NuxtStyledLink class="text-xl" to="/">Go back to the homepage</NuxtStyledLink>
+        <NuxtStyledLink class="text-xl" to="/"><Icon name="nf-oct-arrow_left"/> Go back to the homepage</NuxtStyledLink>
     </main>
 </template>
