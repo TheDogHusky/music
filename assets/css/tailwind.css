@@ -98,12 +98,12 @@ body {
     -o-background-size: cover;
 }
 
-h1 {
+h1:not(.basic) {
     @apply cursor-default border-b-4 max-sm:text-3xl text-center border-transparent hover:border-secondary border-dashed pb-1 md:pb-2 text-5xl font-normal text-white hover:text-primary duration-200;
     transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.5s ease-in-out !important;
 }
 
-h1.group > span.special {
+h1:not(.basic).group > span.special {
     @apply duration-200 group-hover:text-secondary text-primary;
 }
 
