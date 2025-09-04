@@ -19,7 +19,7 @@ router.afterEach(() => {
 </script>
 
 <template>
-    <nav class="flex flex-row flex-wrap justify-between items-center bg-woodsmoke-900 p-4">
+    <nav class="flex flex-row flex-wrap justify-between items-center bg-woodsmoke-950/50 p-4 fixed top-0 left-0 w-full z-50 ">
         <NuxtLink to="/" class="flex flex-row items-center gap-4">
             <NuxtImg src="/logo.webp" format="webp" alt="logo" class="h-12 w-12" />
             <h2 class="cursor-default text-primary border-b-2 border-secondary font-medium border-dashed text-2xl hover:text-secondary duration-200">Adam Billard</h2>

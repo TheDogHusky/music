@@ -9,6 +9,9 @@ export default defineNuxtConfig({
     typescript: {
         strict: true
     },
+    svgo: {
+        autoImportPath: '~/assets/icons'
+    },
     router: {
         linkActiveClass: 'text-secondary',
         linkExactActiveClass: 'text-red'

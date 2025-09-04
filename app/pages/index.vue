@@ -3,8 +3,7 @@
 </script>
 
 <template>
-    <main class="flex flex-col items-center justify-center w-full text-white h-main bg-slate-950 gap-2 app-header">
-        <NuxtImg data-aos-easing="ease-in-out" data-aos="fade-down" data-aos-duration="500" src="/logo.webp" alt="logo" class="h-30 w-30 md:w-40 md:h-40" />
+    <main class="flex flex-col items-center justify-center w-full text-white bg-slate-950 gap-2 app-header">
         <h1 data-aos-easing="ease-in-out" data-aos-delay="100" data-aos="fade-down" data-aos-duration="500" class="group"><span class="special">Adam Billard</span>, young musician.</h1>
         <Socials data-aos-easing="ease-in-out" data-aos-delay="200" data-aos="fade-down" data-aos-duration="500" type="header" />
         <ScrollButton href="#content" />
