@@ -37,6 +37,12 @@ export default defineNuxtConfig({
                 weights: ['400'],
                 styles: ['normal'],
                 display: 'swap'
+            },
+            {
+                name: 'Bree Serif',
+                weights: ['400'],
+                styles: ['normal'],
+                display: 'swap'
             }
         ]
     }

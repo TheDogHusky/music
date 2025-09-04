@@ -4,35 +4,36 @@
     /* Fonts */
     --font-cinzel: 'Cinzel', serif;
     --font-cantata: 'Cantata One', serif;
+    --font-bree: 'Bree Serif', serif;
 
     /* Colors */
-    --color-primary: #22d5d2;
-    --color-primary-50: #effefc;
-    --color-primary-100: #cafdf8;
-    --color-primary-200: #94fbf2;
-    --color-primary-300: #57f1ea;
-    --color-primary-400: #22d5d2;
-    --color-primary-500: #0cc0c0;
-    --color-primary-600: #06999b;
-    --color-primary-700: #0a787b;
-    --color-primary-800: #0d5f62;
-    --color-primary-900: #104f51;
-    --color-primary-950: #022d31;
+    --color-primary: #d67c48;
+    --color-primary-50: #fceeea;
+    --color-primary-100: #f8ddd4;
+    --color-primary-200: #f3baa4;
+    --color-primary-300: #f0986e;
+    --color-primary-400: #d67c48;
+    --color-primary-500: #b2663a;
+    --color-primary-600: #8f512d;
+    --color-primary-700: #6a3b1f;
+    --color-primary-800: #4a2713;
+    --color-primary-900: #2d1608;
+    --color-primary-950: #1e0c04;
 
     --color-deezer: #a238ff;
     
-    --color-secondary: #3777ff;
-    --color-secondary-50: #eef5ff;
-    --color-secondary-100: #d9e8ff;
-    --color-secondary-200: #bcd7ff;
-    --color-secondary-300: #8ebeff;
-    --color-secondary-400: #599aff;
-    --color-secondary-500: #3777ff;
-    --color-secondary-600: #1b52f5;
-    --color-secondary-700: #143ee1;
-    --color-secondary-800: #1733b6;
-    --color-secondary-900: #19308f;
-    --color-secondary-950: #141f57;
+    --color-secondary: #bc9b8f;
+    --color-secondary-50: #f6f3f2;
+    --color-secondary-100: #ede7e5;
+    --color-secondary-200: #dbccc7;
+    --color-secondary-300: #ccb4ac;
+    --color-secondary-400: #bc9b8f;
+    --color-secondary-500: #9c8076;
+    --color-secondary-600: #79635b;
+    --color-secondary-700: #5b4a44;
+    --color-secondary-800: #3f322d;
+    --color-secondary-900: #241c19;
+    --color-secondary-950: #181210;
 
     --color-gray: #bbbbbb;
     --color-gray-50: #f7f7f7;
@@ -101,17 +102,21 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-blend-mode: multiply;
-    @apply bg-[75%] md:bg-[50%] bg-woodsmoke-900/80 min-h-screen
+    @apply bg-[75%] md:bg-[50%] bg-woodsmoke-900/80 min-h-screen;
 }
 
 h1:not(.basic) {
-    @apply cursor-default border-b-4 max-sm:text-3xl text-center border-transparent hover:border-secondary border-dashed pb-1 md:pb-2 text-6xl font-normal text-white hover:text-primary duration-200;
+    @apply flex flex-col gap-3 justify-start items-start cursor-default max-sm:text-2xl text-center border-none pb-1 md:pb-2 text-4xl font-normal text-white duration-200;
     transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.5s ease-in-out !important;
     transition-delay: 0s, 0s, 0.1s !important;
 }
 
-h1:not(.basic).group > span.special {
-    @apply duration-200 group-hover:text-secondary text-primary;
+h1:not(.basic) > span {
+    @apply h-auto;
+}
+
+h1:not(.basic).group > .special {
+    @apply relative font-bree text-5xl md:text-7xl duration-200 text-primary after:w-0 after:h-full after:bg-primary after:absolute after:top-0 after:left-0 after:-z-10 after:duration-200 group-hover:after:w-full group-hover:text-white;
 }
 
 .nav-items {
