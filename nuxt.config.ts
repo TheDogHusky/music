@@ -43,6 +43,12 @@ export default defineNuxtConfig({
                 weights: ['400'],
                 styles: ['normal'],
                 display: 'swap'
+            },
+            {
+                name: 'Playfair Display',
+                weights: ['400', '700', '900'],
+                styles: ['normal', 'italic'],
+                display: 'swap'
             }
         ]
     }
