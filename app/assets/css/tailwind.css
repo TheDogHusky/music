@@ -106,17 +106,13 @@ body {
 }
 
 h1:not(.basic) {
-    @apply flex flex-col gap-3 justify-start items-start cursor-default max-sm:text-2xl text-center border-none pb-1 md:pb-2 text-4xl font-normal text-white duration-200;
+    @apply cursor-default z-0 max-sm:text-7xl text-center border-none pb-1 md:pb-2 text-5xl font-normal text-white duration-200;
     transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.5s ease-in-out !important;
     transition-delay: 0s, 0s, 0.1s !important;
 }
 
-h1:not(.basic) > span {
-    @apply h-auto;
-}
-
 h1:not(.basic).group > .special {
-    @apply relative font-bree text-5xl md:text-7xl duration-200 text-primary after:w-0 after:h-full after:bg-primary after:absolute after:top-0 after:left-0 after:-z-10 after:duration-200 group-hover:after:w-full group-hover:text-white;
+    @apply relative decoration-2 underline-offset-8 decoration-solid underline font-bree duration-200 text-primary after:w-0 after:h-full after:bg-primary after:absolute after:top-0 after:left-0 after:-z-1 after:duration-200 group-hover:after:w-full group-hover:text-white;
 }
 
 .nav-items {
