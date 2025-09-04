@@ -15,7 +15,6 @@ const { isActive, toggleActive } = useNavStates();
     display: block;
     height: 32px;
     width: 32px;
-    top: 8px;
     position: relative;
     cursor: pointer;
 }
@@ -35,20 +34,20 @@ const { isActive, toggleActive } = useNavStates();
 }
 
 .navbar-collapse-btn > span:nth-of-type(1) {
-    top: 0;
+    top: 7px;
 }
 
 .navbar-collapse-btn > span:nth-of-type(2) {
-    top: 8px;
+    top: 15px;
 }
 
 .navbar-collapse-btn > span:nth-of-type(3) {
-    top: 16px;
+    top: 23px;
 }
 
 .navbar-collapse-btn.active > span:nth-of-type(1) {
     transform: rotate(45deg);
-    top: 8px;
+    top: 15px;
 }
 
 .navbar-collapse-btn.active > span:nth-of-type(2) {
@@ -57,6 +56,6 @@ const { isActive, toggleActive } = useNavStates();
 
 .navbar-collapse-btn.active > span:nth-of-type(3) {
     transform: rotate(-45deg);
-    top: 8px;
+    top: 15px;
 }
 </style>
