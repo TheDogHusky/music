@@ -6,6 +6,7 @@
     --font-cantata: 'Cantata One', serif;
     --font-bree: 'Bree Serif', serif;
     --font-playfair: 'Playfair Display', serif;
+    --font-epunda: 'Epunda Slab', serif;
 
     /* Colors */
     --color-primary: #d67c48;
@@ -96,19 +97,12 @@ body {
 }
 
 .app-header {
-    background-image: url(/images/band_2025_music_festival_liffre.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-blend-mode: multiply;
-    @apply bg-[75%] md:bg-[50%] bg-woodsmoke-900/80 min-h-screen;
+    @apply bg-[75%] md:bg-[50%] bg-stone-950/80 min-h-screen;
 }
 
 h1:not(.basic) {
     @apply cursor-default tracking-widest z-0 max-sm:text-7xl text-center border-none pb-1 md:pb-2 text-5xl font-playfair text-white duration-200;
-    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.5s ease-in-out !important;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.5s ease-in-out, opacity 0.5s ease-in-out !important;
     transition-delay: 0s, 0s, 0.1s !important;
 }
 
@@ -126,4 +120,44 @@ nav.expanded .nav-items {
 
 nav.expanded .navbar-collapse-btn {
     @apply fixed top-4 right-4 z-50;
+}
+
+.wallpaper {
+    @apply fixed top-0 left-0 w-full h-full -z-10 overflow-hidden duration-500 ease-in-out transition-opacity opacity-0;
+}
+
+.wallpaper img {
+    @apply w-full h-full object-cover;
+}
+
+.wallpaper.active {
+    @apply opacity-100;
+}
+
+.img-bg {
+    @apply bg-cover bg-center bg-no-repeat bg-stone-950/80 bg-blend-multiply;
+}
+
+.img-bg-5 {
+    @apply bg-[url('/images/band_2025_music_festival_liffre_5_cropped.jpg')];
+}
+
+.img-bg-4 {
+    @apply bg-[url('/images/band_2025_music_festival_liffre_4_cropped.jpg')];
+}
+
+.img-bg-3 {
+    @apply bg-[url('/images/band_2025_music_festival_liffre_3_cropped.jpg')];
+}
+
+.img-bg-2 {
+    @apply bg-[url('/images/band_2025_music_festival_liffre_2.jpg')];
+}
+
+.img-bg-1 {
+    @apply bg-[url('/images/band_2025_music_festival_liffre.jpg')];
+}
+
+.transition-socials {
+    transition: transform 0.2s ease-in-out, opacity 1s ease-in-out, color 0.2s ease-in-out, scale 0.2s ease-in-out !important;
 }

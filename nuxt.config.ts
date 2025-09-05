@@ -22,7 +22,10 @@ export default defineNuxtConfig({
     vite: {
         plugins: [
             tailwindcss()
-        ]
+        ],
+        server: {
+            allowedHosts: ['localhost', 'adambillarddev.loca.lt']
+        }
     },
     fonts: {
         families: [
@@ -48,6 +51,12 @@ export default defineNuxtConfig({
                 name: 'Playfair Display',
                 weights: ['400', '700', '900'],
                 styles: ['normal', 'italic'],
+                display: 'swap'
+            },
+            {
+                name: 'Epunda Slab',
+                weights: ['400', '700'],
+                styles: ['normal'],
                 display: 'swap'
             }
         ]

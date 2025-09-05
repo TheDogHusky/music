@@ -115,7 +115,22 @@ const socialsClass = computed(() => {
 <template>
     <div :class="socialsClass">
         <template v-for="link of links">
-            <ButtonLink :key="link.name" special="socials" :class="buttonSocialsSizes[type]" :href="link.href" target="_blank" variant="icon" v-if="link.showSelf">
+            <ButtonLink
+                :key="link.name"
+                special="socials"
+                class="transition-socials"
+                :class="buttonSocialsSizes[type]"
+                :href="link.href"
+                target="_blank"
+                variant="icon"
+                v-if="link.showSelf"
+                v-bind="type === 'header' ? {
+                    'data-aos': 'fade',
+                    'data-aos-duration': '1000',
+                    'data-aos-anchor-placement': 'top-bottom',
+                    'data-aos-delay': (links.indexOf(link) * 100) + 100
+                } : {}"
+            >
                 <Icon :name="link.icon" v-if="link.name !== 'Deezer'" />
                 <DeezerSVG class="h-[48px] w-[48px] mb-0!" v-else />
                 <span v-if="link.showName">{{ link.name }}</span>

@@ -8,7 +8,7 @@ onMounted(() => {
 
 useHead({
     titleTemplate: (titleChunk) => {
-        return titleChunk ? `${titleChunk} - Adam Billard, young musician` : 'Adam Billard, young musician';
+        return titleChunk ? `${titleChunk} - Adam Billard` : 'Home - Adam Billard';
     },
     script: [
         {
@@ -25,15 +25,16 @@ useHead({
 
 useSeoMeta({
     description: "Adam Billard's Music Portfolio. Adam Billard is a young French musician that started making music at 13 years old.",
-    themeColor: "#3777ff",
+    themeColor: "#d67c48",
     twitterCard: "summary_large_image",
     twitterSite: "@ClassyCraft3r",
     twitterCreator: "@ClassyCraft3r",
     ogUrl: "https://music.classydev.fr",
     ogType: "website",
     ogLocale: "en_US",
-    ogSiteName: "Adam Billard, young musician",
-    ogTitle: "Adam Billard, young musician",
+    ogSiteName: "Adam Billard",
+    ogImage: "/images/adam_selfie.jpg",
+    ogTitle: "Adam Billard",
     ogDescription: "Adam Billard's Music Portfolio. Adam Billard is a young French musician that started making music at 13 years old.",
 });
 </script>
