@@ -7,7 +7,7 @@ const props = defineProps<{
 </script>
 
 <template>
-    <a v-bind="props" class="text-secondary border-b-2 border-dashed border-secondary hover:text-primary duration-200">
+    <a v-bind="props" class="border-none slide-animation">
         <slot></slot>
     </a>
 </template>

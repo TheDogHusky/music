@@ -21,6 +21,14 @@ const songs = [
         link: "https://distrokid.com/hyperfollow/adambillard/destroying-me-quit",
     }
 ];
+
+const description = "Listen to all my songs on major streaming platforms like Spotify, Apple Music, YouTube Music and more.";
+useSeoMeta({
+    title: 'My Songs',
+    description,
+    ogTitle: 'My Songs',
+    ogDescription: description
+});
 </script>
 
 <template>
@@ -33,9 +41,9 @@ const songs = [
         </main>
         <section id="songs" class="flex flex-col items-center p-8 pt-16 justify-center w-full text-white min-h-screen bg-stone-900 gap-5">
             <div class="flex flex-row flex-wrap items-center justify-center w-full gap-4">
-                <a data-aos="fade-up" data-aos-anchor-placement="center-bottom" v-for="song of songs" :key="song.name" :href="song.link" target="_blank" class="flex duration-300 transition-colors flex-col items-center justify-center text-secondary hover:text-primary bg-bunker-950 gap-2">
+                <a data-aos="fade-up" data-aos-anchor-placement="center-bottom" v-for="song of songs" :key="song.name" :href="song.link" target="_blank" class="flex duration-300 transition-colors flex-col items-center justify-center text-secondary hover:text-primary gap-2">
                     <h3 class="text-xl md:text-2xl m-0 font-bold text-center transition-colors duration-200">{{ song.name }}</h3>
-                    <div class="rounded-md overflow-hidden inline h-86 w-86 md:h-128 md:w-128"><img :src="song.image" :alt="song.name" class="object-fill duration-300 transition-transform hover:scale-110" /></div>
+                    <div class="rounded-md overflow-hidden inline h-86 w-86 md:h-128 md:w-128"><NuxtImg :src="song.image" placeholder width="1080" height="1080" :alt="song.name" class="object-fill duration-300 transition-transform hover:scale-110" /></div>
                 </a>
             </div>
         </section>

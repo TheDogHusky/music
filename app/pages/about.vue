@@ -1,5 +1,12 @@
 <script setup lang="ts">
+const description = "Learn more about Adam Billard, a young French songwriter who sings in English and has been writing songs since he was 13.";
 
+useSeoMeta({
+    title: 'About Me',
+    description,
+    ogTitle: 'About Me',
+    ogDescription: description
+});
 </script>
 
 <template>
@@ -7,8 +14,8 @@
         <div class="flex flex-col gap-8 items-center justify-center">
             <h1 class="group" data-aos="fade">About <span class="special">Me</span></h1>
             <div data-aos="fade" data-aos-delay="100" class="flex flex-row gap-12">
-                <div class="max-w-sm w-auto h-auto transition-transform transform-none hover:rotate-2 hover:scale-105">
-                    <NuxtImg src="/images/adam_selfie.jpg" class="object-cover w-full h-full rounded-md" />
+                <div class="w-sm transition-transform transform-none hover:rotate-2 hover:scale-105">
+                    <NuxtImg src="/images/adam_selfie.jpg" placeholder height="1080" width="720" class="object-cover w-full h-full rounded-md" />
                 </div>
                 <div
                     class="text-left text-base sm:text-lg w-auto md:text-xl md:w-2xl flex flex-col gap-10 font-epunda leading-8"
