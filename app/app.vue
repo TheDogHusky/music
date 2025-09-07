@@ -1,6 +1,13 @@
 <script setup lang="ts">
 onMounted(() => {
-    useNuxtApp().$aos().init();
+    useNuxtApp().$aos().init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        anchorPlacement: 'top-bottom',
+        offset: -100,
+        once: true,
+        mirror: false
+    });
     window.onresize = function () {
         useNuxtApp().$aos().refresh();
     }
@@ -47,9 +54,3 @@ useSeoMeta({
         </NuxtLayout>
     </div>
 </template>
-
-<style class="scoped">
-body {
-    background-color: var(--color-slate-950);
-}
-</style>

@@ -7,7 +7,9 @@ watch(() => useRoute().path, (newPath) => {
 </script>
 
 <template>
-    <Header />
-    <slot />
-    <Footer v-if="path !== '/'" />
+    <div>
+        <Header />
+        <slot />
+        <Footer v-if="path !== '/'" />
+    </div>
 </template>

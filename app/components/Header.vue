@@ -3,6 +3,12 @@ import NavCollapseButton from "~/components/NavCollapseButton.vue";
 
 const { setActive, isActive } = useNavStates();
 
+const { y: scrollY } = useWindowScroll();
+const scrolled = ref(false);
+watch(scrollY, (newY) => {
+    scrolled.value = newY > 16 * 4;
+});
+
 const router = useRouter();
 router.afterEach(() => {
     setActive(false);
@@ -10,7 +16,7 @@ router.afterEach(() => {
 </script>
 
 <template>
-    <nav class="flex flex-row justify-center gap-10 items-center p-4 fixed top-0 left-0 w-full z-50 font-cinzel" :class="{ 'expanded': isActive }">
+    <nav class="flex flex-row justify-center gap-10 items-center p-4 fixed top-0 left-0 w-full z-50 font-cinzel duration-200 transition-colors" :class="{ 'expanded': isActive, scrolled }">
         <NuxtLink to="/" class="flex flex-row items-center gap-4">
             <h2 class="cursor-default text-slate-100 font-medium text-2xl hover:text-slate-300 duration-200">Adam Billard</h2>
         </NuxtLink>

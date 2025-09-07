@@ -5,18 +5,13 @@
 <template>
     <main class="flex flex-col items-center p-2 justify-center w-full text-white min-h-screen img-bg img-bg-3 gap-5">
         <div class="flex flex-col gap-8 items-center justify-center">
-            <h1 data-aos-anchor-placement="top-bottom" class="group" data-aos-easing="ease-in-out" data-aos="fade-down" data-aos-duration="500">About <span class="special">Me</span></h1>
-            <div class="flex flex-row gap-12">
-                <div class="max-w-sm w-auto h-auto">
+            <h1 class="group" data-aos="fade">About <span class="special">Me</span></h1>
+            <div data-aos="fade" data-aos-delay="100" class="flex flex-row gap-12">
+                <div class="max-w-sm w-auto h-auto transition-transform transform-none hover:rotate-2 hover:scale-105">
                     <NuxtImg src="/images/adam_selfie.jpg" class="object-cover w-full h-full rounded-md" />
                 </div>
                 <div
-                    data-aos-anchor-placement="top-bottom"
                     class="text-left text-base sm:text-lg w-auto md:text-xl md:w-2xl flex flex-col gap-10 font-epunda leading-8"
-                    data-aos-easing="ease-in-out"
-                    data-aos="fade-right"
-                    data-aos-delay="100"
-                    data-aos-duration="500"
                 >
                     <p>
                         Hello, my name's Adam Billard. I'm a young French songwriter who sings in English. I'm currently 16 years old, and I've been writing songs since I was 13.

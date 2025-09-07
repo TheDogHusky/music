@@ -7,7 +7,7 @@ const props = defineProps<{
 </script>
 
 <template>
-    <NuxtLink v-bind="props" class="text-secondary inline-flex flex-row gap-2 items-center border-b-2 border-dashed border-secondary hover:text-primary duration-200">
+    <NuxtLink v-bind="props" class="inline-flex flex-row gap-2 items-center border-none slide-animation">
         <slot></slot>
     </NuxtLink>
 </template>

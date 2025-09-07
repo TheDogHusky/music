@@ -89,7 +89,7 @@
 }
 
 body {
-    @apply font-cantata
+    @apply font-cantata bg-stone-900;
 }
 
 .router-link-active {
@@ -97,7 +97,7 @@ body {
 }
 
 .app-header {
-    @apply bg-[75%] md:bg-[50%] bg-stone-950/80 min-h-screen;
+    @apply bg-[75%] md:bg-[50%] bg-stone-950/70 min-h-screen;
 }
 
 h1:not(.basic) {
@@ -122,6 +122,10 @@ nav.expanded .navbar-collapse-btn {
     @apply fixed top-4 right-4 z-50;
 }
 
+nav.scrolled {
+    @apply bg-stone-900/50 backdrop-blur-md;
+}
+
 .wallpaper {
     @apply fixed top-0 left-0 w-full h-full -z-10 overflow-hidden duration-500 ease-in-out transition-opacity opacity-0;
 }
@@ -135,7 +139,7 @@ nav.expanded .navbar-collapse-btn {
 }
 
 .img-bg {
-    @apply bg-cover bg-center bg-no-repeat bg-stone-950/80 bg-blend-multiply;
+    @apply bg-cover bg-center bg-no-repeat bg-stone-950/70 bg-blend-multiply;
 }
 
 .img-bg-5 {
@@ -160,4 +164,8 @@ nav.expanded .navbar-collapse-btn {
 
 .transition-socials {
     transition: transform 0.2s ease-in-out, opacity 1s ease-in-out, color 0.2s ease-in-out, scale 0.2s ease-in-out !important;
+}
+
+.slide-animation {
+    @apply relative duration-200 text-primary after:w-0 after:h-full after:bg-primary after:absolute after:top-0 after:left-0 after:-z-1 after:duration-200 hover:after:w-full hover:text-white;
 }
