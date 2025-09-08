@@ -3,11 +3,7 @@ services:
     build:
       context: .
       dockerfile: docker/Dockerfile
-    networks:
-      - mynetwork
-    environment:
-      - NGINX_RELOAD_ENABLED=true
-networks:
-  mynetwork:
-    name: mynetwork
-    external: true
+    env_file:
+      - .env
+    ports:
+      - "8001:8000"
