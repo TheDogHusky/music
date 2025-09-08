@@ -122,7 +122,7 @@ nav.expanded .navbar-collapse-btn {
     @apply fixed top-4 right-4 z-50;
 }
 
-nav.scrolled {
+nav:not(.expanded).scrolled {
     @apply bg-stone-900/50 backdrop-blur-md;
 }
 
