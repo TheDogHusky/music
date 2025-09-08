@@ -10,15 +10,15 @@ useSeoMeta({
 </script>
 
 <template>
-    <main class="flex flex-col items-center p-2 justify-center w-full text-white min-h-screen img-bg img-bg-3 gap-5">
-        <div class="flex flex-col gap-8 items-center justify-center">
+    <main class="flex flex-col items-center p-4 md:p-2 justify-center w-full text-white min-h-screen img-bg img-bg-3 gap-5">
+        <div class="flex flex-col gap-8 items-center justify-center mt-16 w-full max-w-full">
             <h1 class="group" data-aos="fade">About <span class="special">Me</span></h1>
-            <div data-aos="fade" data-aos-delay="100" class="flex flex-row gap-12">
-                <div class="w-sm transition-transform transform-none hover:rotate-2 hover:scale-105">
+            <div data-aos="fade" data-aos-delay="100" class="flex flex-col-reverse justify-center items-center md:flex-row gap-12 max-w-full w-full">
+                <div class="md:w-sm w-xs transition-transform transform-none hover:rotate-2 hover:scale-105">
                     <NuxtImg src="/images/adam_selfie.jpg" placeholder height="1080" width="720" class="object-cover w-full h-full rounded-md" />
                 </div>
                 <div
-                    class="text-left text-base sm:text-lg w-auto md:text-xl md:w-2xl flex flex-col gap-10 font-epunda leading-8"
+                    class="text-left text-base sm:text-lg sm:w-lg w-auto md:text-lg lg:text-xl lg:w-2xl flex flex-col gap-2 md:gap-8 lg:gap-10 font-epunda md:leading-6 lg:leading-8 text-wrap"
                 >
                     <p>
                         Hello, my name's Adam Billard. I'm a young French songwriter who sings in English. I'm currently 16 years old, and I've been writing songs since I was 13.

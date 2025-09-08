@@ -79,7 +79,7 @@ const links = [
         showSelf: type === "music",
         showName: false,
         icon: "/deezer.svg",
-        href: "https://deezer.page.link/z323FFbE4yFQQnfx8"
+        href: "https://www.deezer.com/artist/56376872"
     },
     {
         name: "YouTube Music",
