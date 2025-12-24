@@ -21,7 +21,7 @@ useSeoMeta({
                     class="text-left text-base sm:text-lg sm:w-lg w-auto md:text-lg lg:text-xl lg:w-2xl flex flex-col gap-2 md:gap-8 lg:gap-10 font-epunda md:leading-6 lg:leading-8 text-wrap"
                 >
                     <p>
-                        Hello, my name's Adam Billard. I'm a young French songwriter who sings in English. I'm currently 16 years old, and I've been writing songs since I was 13.
+                        Hello, my name's Adam Billard. I'm a young French songwriter who sings in English. I'm currently 17 years old, and I've been writing songs since I was 13.
                     </p>
                     <p>
                         I started learning music when I was seven or eight years old with Harp and solfège. After a while, I got tired of playing music and stopped for several years.
